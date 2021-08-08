@@ -16,41 +16,25 @@
 	<!--link+Tab-->
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--navbar and bg were changed, the line following this in the original was removed.-->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			<ul class="navbar-nav mx-auto"> <!--changed mr to mx and removed active in succeeding line from original-->
+				<li class="nav-item">
+					<a class="nav-link" href="#landing">Home</a> <!--removed span class, added landing to href-->
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
+					<a class="nav-link" href="#gallery">Gallery</a> <!--added gallery to href and changed label to Gallery-->
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</li>
+				<!--removed the succeeding lines after this until closing ul tag-->
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
+			<!--removed the succeeding lines after this until closing div tag-->
 		</div>
 	</nav>
-	<div class="container">
+	<div class="container-fluid"> <!--added -fluid to remove left and right margins for better view in tablets.-->
 		<section id="landing" class="text-center jumbotron mt-3">
 			<!--jumbotron is a special way to isolate a section-->
 			<!--mt-3 is margin top of size 3-->
@@ -64,12 +48,12 @@
 		<section id="gallery" class="text-center bg-dark mb-5">
 			<!--bg can be success, info, warning, dark; all of these are built-in within bootstrap.-->
 			<div class="tools">
-			<h2>Languages I Speak</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-			</ul>
-			<!--unordered list-->
+				<h2>Languages I Speak</h2>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+				</ul>
+				<!--unordered list-->
 			</div>
 			<div class="tools">
 				<h2>Tools I Use</h2>
