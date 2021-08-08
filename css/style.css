@@ -17,11 +17,20 @@ ul {
 	padding: 0;
 }
 
-#landing{
+/*This makes changes in the jumbotron*/
+#landing,
+#gallery {
+	/*height is 80% of the vertical display*/
 	height: 80vh;
 	/* Center the elements vertically*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+/*Copy-pasting landing code to gallery will work but it is bad because it is repetitive. What we can do is after #landing, add a comma then add #gallery. This will make all in the {} be applied to both ids.*/
+
+/*Rounding the corners in gallery*/
+#gallery{
+	border-radius: 0.3rem;
 }
