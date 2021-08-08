@@ -28,9 +28,23 @@ ul {
 	justify-content: center;
 	align-items: center;
 }
-/*Copy-pasting landing code to gallery will work but it is bad because it is repetitive. What we can do is after #landing, add a comma then add #gallery. This will make all in the {} be applied to both ids.*/
+/*Copy-pasting landing code to gallery will work but it is bad because it is repetitive. What we can do is after #landing, add a comma then add #gallery. This will make all the properties in the {} be applied to both ids.*/
 
 /*Rounding the corners in gallery*/
 #gallery{
 	border-radius: 0.3rem;
+}
+
+.tools {
+  color: white;
+  /* Create a nice and clean section for tools. Note there is no more bulleted list. */
+  padding: 25px;
+  height: 200px;
+  border: 5px solid #f2f2f2;
+  margin: 20px;
+  width: 75%;
+}
+
+h2 {
+  color: #007bff; /*first 2 set of numbers is for red, next 2 is blue, last 2 is green.*/
 }
