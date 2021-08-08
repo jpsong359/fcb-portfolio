@@ -48,3 +48,8 @@ ul {
 h2 {
   color: #007bff; /*first 2 set of numbers is for red, next 2 is blue, last 2 is green.*/
 }
+
+/*For smoother scrolling, but no noticeable difference.*/
+html {
+  scroll-behavior: smooth;
+}
